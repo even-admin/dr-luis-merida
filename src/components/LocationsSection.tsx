@@ -51,9 +51,10 @@ const LocationsSection = () => {
             </TabsContent>
             <TabsContent value="star">
               <iframe
+                id="cLtGf6lOnYzVgkjjUwQ0_1772642559459"
                 src="https://api.leadconnectorhq.com/widget/booking/cLtGf6lOnYzVgkjjUwQ0"
                 className="w-full border-none rounded"
-                style={{ minHeight: "600px", overflow: "hidden" }}
+                style={{ minHeight: "400px", overflow: "hidden" }}
                 scrolling="no"
                 title="Agendar cita - Hospital Star Médica"
               />
