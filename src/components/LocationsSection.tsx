@@ -41,9 +41,10 @@ const LocationsSection = () => {
             </TabsList>
             <TabsContent value="faro">
               <iframe
+                id="zRPVLsuGUsTA4IIpNI8H_1772643601224"
                 src="https://api.leadconnectorhq.com/widget/booking/zRPVLsuGUsTA4IIpNI8H"
                 className="w-full border-none rounded"
-                style={{ minHeight: "600px", overflow: "hidden" }}
+                style={{ minHeight: "400px", overflow: "hidden" }}
                 scrolling="no"
                 title="Agendar cita - Hospital Faro del Mayab"
               />
