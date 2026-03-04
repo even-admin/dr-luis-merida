@@ -1,21 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
-const offices = [
-  {
-    name: "Hospital Faro del Mayab #711",
-    address: "Calle 24 S/N, por 7 y 7A, Altabrisa, 97133 Mérida, Yuc.",
-    phone: "999 000 0000",
-    hours: "Lunes a Viernes · 10:00 – 14:00",
-  },
-  {
-    name: "Hospital Star Médica #417",
-    address: "Calle 26 No. 199, por 15 y 7, Altabrisa, 97133 Mérida, Yuc.",
-    phone: "999 000 0000",
-    hours: "Lunes a Viernes · 16:00 – 20:00",
-  },
-];
-
 // Placeholder — replace with actual embed URLs once provided
 const CALENDAR_EMBED_FARO = "";
 const CALENDAR_EMBED_STAR = '<iframe src="https://api.leadconnectorhq.com/widget/booking/cLtGf6lOnYzVgkjjUwQ0" style="width: 100%;border:none;overflow: hidden;min-height:600px;" scrolling="no" id="cLtGf6lOnYzVgkjjUwQ0_1772642559459"></iframe><script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"><\/script>';
@@ -38,9 +23,9 @@ const LocationsSection = () => {
           </p>
 
           <Tabs defaultValue="faro" className="w-full">
-            <TabsList className="mb-6 bg-muted">
-              <TabsTrigger value="faro" className="text-[13px]">Hospital Faro del Mayab</TabsTrigger>
-              <TabsTrigger value="star" className="text-[13px]">Hospital Star Médica</TabsTrigger>
+            <TabsList className="mb-6 bg-transparent gap-3 p-0 h-auto">
+              <TabsTrigger value="faro" className="text-[13px] font-medium tracking-wide rounded-full px-6 py-2.5 bg-white text-ink border border-border transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary hover:bg-primary hover:text-white hover:border-primary shadow-none">Hospital Faro del Mayab</TabsTrigger>
+              <TabsTrigger value="star" className="text-[13px] font-medium tracking-wide rounded-full px-6 py-2.5 bg-white text-ink border border-border transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary hover:bg-primary hover:text-white hover:border-primary shadow-none">Hospital Star Médica</TabsTrigger>
             </TabsList>
             <TabsContent value="faro">
               {CALENDAR_EMBED_FARO ? (
@@ -83,33 +68,6 @@ const LocationsSection = () => {
           </div>
         </div>
 
-        {/* Ubicaciones section below */}
-        <div className="pt-16 mt-16 border-t border-border">
-          <p className="label-uppercase mb-4">Consultorios</p>
-          <h2 className="font-serif text-[clamp(26px,3vw,36px)] text-ink mb-12">
-            Ubicaciones en Mérida
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {offices.map((office) => (
-              <div key={office.name}>
-                <h3 className="font-serif text-[20px] text-ink mb-3">{office.name}</h3>
-                <div className="space-y-2 text-charcoal text-[15px]">
-                  <p>{office.address}</p>
-                  <p>
-                    <span className="label-uppercase text-[11px] mr-2">Tel</span>
-                    <a href={`tel:+52${office.phone.replace(/\s/g, '')}`} className="link-underline">
-                      {office.phone}
-                    </a>
-                  </p>
-                  <p>
-                    <span className="label-uppercase text-[11px] mr-2">Horario</span>
-                    {office.hours}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
