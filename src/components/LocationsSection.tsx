@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
@@ -8,6 +8,7 @@ const CALENDAR_EMBED_STAR = '<iframe src="https://api.leadconnectorhq.com/widget
 
 const LocationsSection = () => {
   const ref = useScrollReveal();
+  const [activeTab, setActiveTab] = useState("faro");
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -16,15 +17,16 @@ const LocationsSection = () => {
     script.async = true;
     document.body.appendChild(script);
 
-    // Listen for LeadConnector auto-resize messages
     const handleMessage = (e: MessageEvent) => {
       if (e.data && typeof e.data === "object" && e.data.type === "resize") {
-        const iframe = document.querySelector<HTMLIFrameElement>(
+        const iframes = document.querySelectorAll<HTMLIFrameElement>(
           `iframe[src*="leadconnectorhq.com"]`
         );
-        if (iframe && e.data.height) {
-          iframe.style.height = `${e.data.height}px`;
-        }
+        iframes.forEach((iframe) => {
+          if (e.data.height) {
+            iframe.style.height = `${e.data.height}px`;
+          }
+        });
       }
     };
     window.addEventListener("message", handleMessage);
@@ -38,7 +40,6 @@ const LocationsSection = () => {
   return (
     <section id="consultorios" className="section-padding bg-white" aria-label="Consultorios">
       <div className="content-width" ref={ref}>
-        {/* Citas section first */}
         <div id="citas">
           <p className="label-uppercase mb-4">Citas</p>
           <div className="w-10 h-[2px] bg-primary mb-6" />
@@ -50,12 +51,12 @@ const LocationsSection = () => {
             o comuníquese directamente por teléfono o WhatsApp.
           </p>
 
-          <Tabs defaultValue="faro" className="w-full">
+          <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
             <TabsList className="mb-6 inline-flex w-full sm:w-auto rounded-full bg-white border border-border p-1 h-auto gap-0">
               <TabsTrigger value="faro" className="flex-1 sm:flex-none text-[13px] font-medium rounded-full px-5 py-2 transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white text-charcoal shadow-none">Faro del Mayab</TabsTrigger>
               <TabsTrigger value="star" className="flex-1 sm:flex-none text-[13px] font-medium rounded-full px-5 py-2 transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white text-charcoal shadow-none">Star Médica</TabsTrigger>
             </TabsList>
-            <TabsContent value="faro">
+            <TabsContent value="faro" forceMount className={activeTab !== "faro" ? "hidden" : ""}>
               <iframe
                 id="zRPVLsuGUsTA4IIpNI8H_1772643601224"
                 src="https://api.leadconnectorhq.com/widget/booking/zRPVLsuGUsTA4IIpNI8H"
@@ -64,7 +65,7 @@ const LocationsSection = () => {
                 title="Agendar cita - Hospital Faro del Mayab"
               />
             </TabsContent>
-            <TabsContent value="star">
+            <TabsContent value="star" forceMount className={activeTab !== "star" ? "hidden" : ""}>
               <iframe
                 id="cLtGf6lOnYzVgkjjUwQ0_1772642559459"
                 src="https://api.leadconnectorhq.com/widget/booking/cLtGf6lOnYzVgkjjUwQ0"
@@ -92,7 +93,6 @@ const LocationsSection = () => {
             </a>
           </div>
         </div>
-
       </div>
     </section>
   );
