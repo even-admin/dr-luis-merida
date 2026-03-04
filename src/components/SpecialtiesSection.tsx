@@ -23,7 +23,7 @@ const SpecialtiesSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="especialidad" className="section-padding" aria-label="Especialidad">
+    <section id="especialidad" className="pt-16 pb-24" aria-label="Especialidad">
       <div className="content-width" ref={ref}>
         <p className="label-uppercase mb-4">Especialidades</p>
         <h2 className="font-serif text-[clamp(26px,3vw,36px)] text-ink mb-12 max-w-[600px]">
