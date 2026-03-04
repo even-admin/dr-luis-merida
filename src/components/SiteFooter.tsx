@@ -8,7 +8,7 @@ const SiteFooter = () => {
             <p className="label-uppercase text-[11px] !text-off-white/60">Neurocirujano · Mérida, Yucatán</p>
           </div>
           <div>
-            <p className="label-uppercase text-[11px] mb-3 !text-warm-grey">Contacto</p>
+            <p className="label-uppercase text-[11px] mb-3 !text-off-white/60">Contacto</p>
             <div className="space-y-2 text-off-white/80 text-[15px]">
               <p>
                 <a href="tel:+529990000000" className="hover:text-off-white transition-colors">999 000 0000</a>
