@@ -80,16 +80,13 @@ const LocationsSection = () => {
               )}
             </TabsContent>
             <TabsContent value="star">
-              {CALENDAR_EMBED_STAR ? (
-                <div
-                  className="w-full min-h-[500px] border border-border rounded"
-                  dangerouslySetInnerHTML={{ __html: CALENDAR_EMBED_STAR }}
-                />
-              ) : (
-                <div className="w-full min-h-[300px] border border-border rounded flex items-center justify-center text-muted-foreground text-sm">
-                  Calendario próximamente
-                </div>
-              )}
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/booking/cLtGf6lOnYzVgkjjUwQ0"
+                className="w-full border-none rounded"
+                style={{ minHeight: "700px", overflow: "hidden" }}
+                scrolling="no"
+                title="Agendar cita - Hospital Star Médica"
+              />
             </TabsContent>
           </Tabs>
 
