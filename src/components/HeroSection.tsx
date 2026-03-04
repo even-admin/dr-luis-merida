@@ -3,15 +3,15 @@ import drPortrait from "@/assets/dr-ramirez-portrait.jpg";
 const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center" aria-label="Inicio">
-      <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.65fr] w-full min-h-screen">
         {/* Text side */}
-        <div className="flex flex-col justify-center px-6 sm:px-12 lg:px-20 py-32 lg:py-0 order-2 lg:order-1">
-          <div className="max-w-[520px]">
+        <div className="flex flex-col justify-center px-6 sm:px-12 lg:px-24 py-32 lg:py-0 order-2 lg:order-1">
+          <div className="max-w-[540px]">
             <p className="label-uppercase mb-6 reveal">Neurocirugía · Mérida, Yucatán</p>
             <h1 className="font-serif text-[clamp(36px,5vw,64px)] leading-[1.1] text-ink mb-6 reveal reveal-delay-1">
               Dr. Luis Alberto<br />Ramírez López
             </h1>
-            <p className="text-charcoal text-[15px] leading-relaxed max-w-[440px] mb-8 reveal reveal-delay-2">
+            <p className="text-charcoal text-[15px] leading-relaxed max-w-[460px] mb-8 reveal reveal-delay-2">
               Atención neuroquirúrgica especializada con enfoque en cirugía de columna, 
               tumores cerebrales y patología de nervio periférico en Mérida, Yucatán.
             </p>
