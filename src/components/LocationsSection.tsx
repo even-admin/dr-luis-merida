@@ -35,9 +35,9 @@ const LocationsSection = () => {
           </p>
 
           <Tabs defaultValue="faro" className="w-full">
-            <TabsList className="mb-6 bg-transparent gap-3 p-0 h-auto">
-              <TabsTrigger value="faro" className="text-[13px] font-medium tracking-wide rounded-full px-6 py-2.5 bg-white text-ink border border-border transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary hover:bg-primary hover:text-white hover:border-primary shadow-none">Hospital Faro del Mayab</TabsTrigger>
-              <TabsTrigger value="star" className="text-[13px] font-medium tracking-wide rounded-full px-6 py-2.5 bg-white text-ink border border-border transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary hover:bg-primary hover:text-white hover:border-primary shadow-none">Hospital Star Médica</TabsTrigger>
+            <TabsList className="mb-6 inline-flex w-full sm:w-auto rounded-full bg-white border border-border p-1 h-auto gap-0">
+              <TabsTrigger value="faro" className="flex-1 sm:flex-none text-[13px] font-medium rounded-full px-5 py-2 transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white text-charcoal shadow-none">Faro del Mayab</TabsTrigger>
+              <TabsTrigger value="star" className="flex-1 sm:flex-none text-[13px] font-medium rounded-full px-5 py-2 transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white text-charcoal shadow-none">Star Médica</TabsTrigger>
             </TabsList>
             <TabsContent value="faro">
               <iframe
