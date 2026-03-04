@@ -4,7 +4,7 @@ const ReviewsSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="opiniones" className="section-padding bg-[hsl(45,10%,93%)]" aria-label="Opiniones de pacientes">
+    <section id="opiniones" className="section-padding bg-white" aria-label="Opiniones de pacientes">
       <div className="content-width" ref={ref}>
         <p className="label-uppercase mb-4">Opiniones</p>
         <div className="w-10 h-[2px] bg-primary mb-6" />

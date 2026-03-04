@@ -21,7 +21,7 @@ const LocationsSection = () => {
   }, []);
 
   return (
-    <section id="consultorios" className="section-padding border-t border-border" aria-label="Consultorios">
+    <section id="consultorios" className="section-padding" aria-label="Consultorios">
       <div className="content-width" ref={ref}>
         {/* Citas section first */}
         <div id="citas">

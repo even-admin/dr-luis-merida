@@ -4,7 +4,7 @@ const AboutSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="sobre-el-doctor" className="section-padding border-t border-border" aria-label="Sobre el Doctor">
+    <section id="sobre-el-doctor" className="section-padding" aria-label="Sobre el Doctor">
       <div className="content-width" ref={ref}>
         <p className="label-uppercase mb-4">Sobre el Doctor</p>
         <div className="w-10 h-[2px] bg-primary mb-6" />
