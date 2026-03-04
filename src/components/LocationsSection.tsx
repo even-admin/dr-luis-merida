@@ -40,7 +40,7 @@ const LocationsSection = () => {
               <iframe
                 src="https://api.leadconnectorhq.com/widget/booking/cLtGf6lOnYzVgkjjUwQ0"
                 className="w-full border-none rounded"
-                style={{ minHeight: "1200px", overflow: "hidden" }}
+                style={{ minHeight: "600px", overflow: "hidden" }}
                 scrolling="no"
                 title="Agendar cita - Hospital Star Médica"
               />
