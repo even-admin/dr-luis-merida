@@ -1,21 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
-const offices = [
-  {
-    name: "Hospital Faro del Mayab #711",
-    address: "Calle 24 S/N, por 7 y 7A, Altabrisa, 97133 Mérida, Yuc.",
-    phone: "999 000 0000",
-    hours: "Lunes a Viernes · 10:00 – 14:00",
-  },
-  {
-    name: "Hospital Star Médica #417",
-    address: "Calle 26 No. 199, por 15 y 7, Altabrisa, 97133 Mérida, Yuc.",
-    phone: "999 000 0000",
-    hours: "Lunes a Viernes · 16:00 – 20:00",
-  },
-];
-
 // Placeholder — replace with actual embed URLs once provided
 const CALENDAR_EMBED_FARO = "";
 const CALENDAR_EMBED_STAR = '<iframe src="https://api.leadconnectorhq.com/widget/booking/cLtGf6lOnYzVgkjjUwQ0" style="width: 100%;border:none;overflow: hidden;min-height:600px;" scrolling="no" id="cLtGf6lOnYzVgkjjUwQ0_1772642559459"></iframe><script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"><\/script>';
