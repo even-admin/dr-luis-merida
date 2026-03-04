@@ -15,8 +15,23 @@ const LocationsSection = () => {
     script.type = "text/javascript";
     script.async = true;
     document.body.appendChild(script);
+
+    // Listen for LeadConnector auto-resize messages
+    const handleMessage = (e: MessageEvent) => {
+      if (e.data && typeof e.data === "object" && e.data.type === "resize") {
+        const iframe = document.querySelector<HTMLIFrameElement>(
+          `iframe[src*="leadconnectorhq.com"]`
+        );
+        if (iframe && e.data.height) {
+          iframe.style.height = `${e.data.height}px`;
+        }
+      }
+    };
+    window.addEventListener("message", handleMessage);
+
     return () => {
       document.body.removeChild(script);
+      window.removeEventListener("message", handleMessage);
     };
   }, []);
 
@@ -45,8 +60,7 @@ const LocationsSection = () => {
                 id="zRPVLsuGUsTA4IIpNI8H_1772643601224"
                 src="https://api.leadconnectorhq.com/widget/booking/zRPVLsuGUsTA4IIpNI8H"
                 className="w-full border-none rounded"
-                style={{ minHeight: "400px", overflow: "hidden" }}
-                scrolling="no"
+                style={{ minHeight: "700px", height: "700px" }}
                 title="Agendar cita - Hospital Faro del Mayab"
               />
             </TabsContent>
@@ -55,8 +69,7 @@ const LocationsSection = () => {
                 id="cLtGf6lOnYzVgkjjUwQ0_1772642559459"
                 src="https://api.leadconnectorhq.com/widget/booking/cLtGf6lOnYzVgkjjUwQ0"
                 className="w-full border-none rounded"
-                style={{ minHeight: "400px", overflow: "hidden" }}
-                scrolling="no"
+                style={{ minHeight: "700px", height: "700px" }}
                 title="Agendar cita - Hospital Star Médica"
               />
             </TabsContent>
