@@ -9,6 +9,17 @@ const CALENDAR_EMBED_STAR = '<iframe src="https://api.leadconnectorhq.com/widget
 const LocationsSection = () => {
   const ref = useScrollReveal();
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://link.msgsndr.com/js/form_embed.js";
+    script.type = "text/javascript";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section id="consultorios" className="section-padding border-t border-border" aria-label="Consultorios">
       <div className="content-width" ref={ref}>
