@@ -28,7 +28,7 @@ const SiteFooter = () => {
           </div>
         </div>
         <div className="border-t border-white/10 pt-8">
-          <p className="text-[13px] text-warm-grey">
+          <p className="text-[13px] text-off-white/60">
             © {new Date().getFullYear()} Dr. Luis Alberto Ramírez López. Todos los derechos reservados.
           </p>
         </div>
