@@ -12,11 +12,10 @@ const SiteHeader = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 transition-colors duration-300"
-      style={{ height: 64 }}
-      // Mobile/tablet: always solid white. Desktop: transparent until scrolled.
-      // Using a className approach for responsive behavior isn't possible with inline rgba,
-      // so we handle it via CSS custom approach below.
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 h-16
+        bg-[rgba(247,246,242,0.96)] backdrop-blur-md
+        ${scrolled ? 'lg:bg-[rgba(247,246,242,0.96)] lg:backdrop-blur-md' : 'lg:bg-transparent lg:backdrop-blur-none'}
+      `}
     >
       <nav className="content-width flex items-center justify-between h-full" aria-label="Navegación principal">
         <a href="#inicio" className="font-serif text-[16px] text-ink leading-tight">
