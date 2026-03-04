@@ -26,6 +26,7 @@ const LocationsSection = () => {
         {/* Citas section first */}
         <div id="citas">
           <p className="label-uppercase mb-4">Citas</p>
+          <div className="w-10 h-[2px] bg-primary mb-6" />
           <h2 className="font-serif text-[clamp(26px,3vw,36px)] text-ink mb-6">
             Agende su consulta
           </h2>
