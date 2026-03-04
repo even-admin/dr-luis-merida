@@ -3,32 +3,35 @@ import drPortrait from "@/assets/dr-ramirez-portrait.jpg";
 const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center" aria-label="Inicio">
-      {/* Mobile/Tablet layout (< lg) */}
-      <div
-        className="lg:hidden absolute top-16 left-0 right-0 bottom-0 bg-cover bg-[center_15%] md:bg-[60%_20%]"
-        style={{ backgroundImage: `url(${drPortrait})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,30,60,0.82)] via-[rgba(10,30,60,0.30)] to-transparent" />
-      </div>
-
-      <div className="lg:hidden relative z-10 w-full min-h-screen flex items-end pb-16 pt-16">
-        <div className="content-width w-full">
-          <div className="max-w-[540px]">
-            <p className="label-uppercase mb-6 reveal !text-white/60">Neurocirugía · Mérida, Yucatán</p>
-            <h1 className="font-serif text-[clamp(36px,5vw,64px)] leading-[1.1] !text-white mb-6 reveal reveal-delay-1">
+      {/* Mobile/Tablet layout (< lg) — split: image top, copy bottom */}
+      <div className="lg:hidden flex flex-col min-h-screen pt-16">
+        {/* Image portion with name overlay */}
+        <div className="relative flex-1 min-h-0">
+          <div
+            className="absolute inset-0 bg-cover bg-[center_15%] md:bg-[60%_20%]"
+            style={{ backgroundImage: `url(${drPortrait})` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,30,60,0.85)] via-transparent to-transparent" />
+          <div className="relative z-10 h-full flex flex-col justify-end p-6 pb-8">
+            <p className="label-uppercase mb-3 reveal !text-white/60">Neurocirugía · Mérida, Yucatán</p>
+            <h1 className="font-serif text-[clamp(32px,8vw,52px)] leading-[1.08] !text-white reveal reveal-delay-1">
               Dr. Luis Alberto<br />Ramírez López
             </h1>
-            <p className="text-white/80 text-[15px] leading-relaxed max-w-[460px] mb-8 reveal reveal-delay-2">
-              Atención neuroquirúrgica especializada con enfoque en cirugía de columna, 
-              tumores cerebrales y patología de nervio periférico en Mérida, Yucatán.
-            </p>
-            <a
-              href="#contacto"
-              className="inline-block font-sans text-[13px] font-medium tracking-wide text-foreground bg-white backdrop-blur-md border border-white/50 rounded-full px-8 py-3 transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary shadow-sm reveal reveal-delay-3"
-            >
-              Agendar consulta
-            </a>
           </div>
+        </div>
+
+        {/* Copy + CTA on solid background */}
+        <div className="bg-background px-6 py-8">
+          <p className="text-charcoal text-[15px] leading-relaxed max-w-[460px] mb-6 reveal reveal-delay-2">
+            Atención neuroquirúrgica especializada con enfoque en cirugía de columna, 
+            tumores cerebrales y patología de nervio periférico en Mérida, Yucatán.
+          </p>
+          <a
+            href="#contacto"
+            className="inline-block font-sans text-[13px] font-medium tracking-wide text-foreground bg-white backdrop-blur-md border border-border rounded-full px-8 py-3 transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary shadow-sm reveal reveal-delay-3"
+          >
+            Agendar consulta
+          </a>
         </div>
       </div>
 
