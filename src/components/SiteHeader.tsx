@@ -13,8 +13,7 @@ const SiteHeader = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 h-16
-        bg-[rgba(247,246,242,0.96)] backdrop-blur-md
-        ${scrolled ? 'lg:bg-[rgba(247,246,242,0.96)] lg:backdrop-blur-md' : 'lg:bg-transparent lg:backdrop-blur-none'}
+        ${scrolled ? 'bg-white/96 backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--foreground)/0.06)]' : 'bg-white lg:bg-transparent'}
       `}
     >
       <nav className="content-width flex items-center justify-between h-full" aria-label="Navegación principal">
