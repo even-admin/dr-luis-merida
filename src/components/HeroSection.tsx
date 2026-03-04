@@ -3,7 +3,7 @@ import drPortrait from "@/assets/dr-ramirez-portrait.jpg";
 const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center" aria-label="Inicio">
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.65fr] w-full min-h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.85fr] w-full min-h-screen">
         {/* Text side */}
         <div className="flex flex-col justify-center px-6 sm:px-12 lg:px-24 py-32 lg:py-0 order-2 lg:order-1">
           <div className="max-w-[540px]">
