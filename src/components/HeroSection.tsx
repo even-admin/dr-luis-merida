@@ -41,10 +41,11 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.85fr] items-center gap-8 lg:gap-12">
           <div className="order-2 lg:order-1">
             <div className="max-w-[540px]">
-              <p className="label-uppercase mb-6 reveal">Neurocirugía · Mérida, Yucatán</p>
-              <h1 className="font-serif text-[clamp(36px,5vw,64px)] leading-[1.1] text-ink mb-6 reveal reveal-delay-1">
+              <p className="label-uppercase mb-6 reveal">Neurocirugía</p>
+              <h1 className="font-serif text-[clamp(36px,5vw,64px)] leading-[1.1] text-ink mb-3 reveal reveal-delay-1">
                 Dr. Luis Alberto<br />Ramírez López
               </h1>
+              <p className="label-uppercase mb-6 reveal reveal-delay-1">Mérida, Yucatán</p>
               <p className="text-charcoal text-[15px] leading-relaxed max-w-[460px] mb-8 reveal reveal-delay-2">
                 Atención neuroquirúrgica especializada con enfoque en cirugía de columna, 
                 tumores cerebrales y patología de nervio periférico en Mérida, Yucatán.
