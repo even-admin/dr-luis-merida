@@ -161,3 +161,8 @@
     animation: none;
   }
 }
+
+@keyframes mobile-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

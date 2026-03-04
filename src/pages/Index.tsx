@@ -1,9 +1,9 @@
 import SiteHeader from "@/components/SiteHeader";
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
 import SpecialtiesSection from "@/components/SpecialtiesSection";
+import AboutSection from "@/components/AboutSection";
 import LocationsSection from "@/components/LocationsSection";
-import ContactSection from "@/components/ContactSection";
+import ReviewsSection from "@/components/ReviewsSection";
 import SiteFooter from "@/components/SiteFooter";
 import StructuredData from "@/components/StructuredData";
 
@@ -14,10 +14,10 @@ const Index = () => {
       <SiteHeader />
       <main>
         <HeroSection />
-        <AboutSection />
         <SpecialtiesSection />
+        <AboutSection />
         <LocationsSection />
-        <ContactSection />
+        <ReviewsSection />
       </main>
       <SiteFooter />
     </>

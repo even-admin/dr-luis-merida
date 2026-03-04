@@ -4,9 +4,9 @@ const AboutSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="sobre-mi" className="section-padding border-t border-border" aria-label="Sobre mí">
+    <section id="sobre-el-doctor" className="section-padding border-t border-border" aria-label="Sobre el Doctor">
       <div className="content-width" ref={ref}>
-        <p className="label-uppercase mb-4">Sobre mí</p>
+        <p className="label-uppercase mb-4">Sobre el Doctor</p>
         <h2 className="font-serif text-[clamp(26px,3vw,36px)] text-ink mb-8 max-w-[700px]">
           Formación de excelencia al servicio de sus pacientes
         </h2>
