@@ -24,7 +24,7 @@ const HeroSection = () => {
             </p>
             <a
               href="#contacto"
-              className="inline-block font-sans text-[13px] font-medium tracking-wide text-foreground bg-white/40 backdrop-blur-md border border-white/50 rounded-full px-8 py-3 transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary shadow-sm reveal reveal-delay-3"
+              className="inline-block font-sans text-[13px] font-medium tracking-wide text-foreground bg-white backdrop-blur-md border border-white/50 rounded-full px-8 py-3 transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary shadow-sm reveal reveal-delay-3"
             >
               Agendar consulta
             </a>
