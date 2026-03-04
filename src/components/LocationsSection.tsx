@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
