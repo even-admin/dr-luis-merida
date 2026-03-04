@@ -5,7 +5,7 @@ const SiteFooter = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div>
             <p className="font-serif text-[18px] text-off-white mb-2">Dr. Luis Alberto Ramírez López</p>
-            <p className="label-uppercase text-[11px] !text-warm-grey">Neurocirujano · Mérida, Yucatán</p>
+            <p className="label-uppercase text-[11px] !text-off-white/60">Neurocirujano · Mérida, Yucatán</p>
           </div>
           <div>
             <p className="label-uppercase text-[11px] mb-3 !text-warm-grey">Contacto</p>
