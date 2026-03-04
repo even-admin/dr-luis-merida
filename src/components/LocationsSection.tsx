@@ -90,18 +90,18 @@ const LocationsSection = () => {
             </TabsContent>
           </Tabs>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <a
               href="https://wa.me/529990000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide text-primary-foreground bg-primary px-8 py-3 transition-colors duration-200 hover:bg-primary/90"
+              className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide rounded-full px-8 py-3 bg-foreground/5 backdrop-blur-md text-ink border border-foreground/10 transition-colors duration-200 hover:text-primary hover:border-primary/30"
             >
               Agendar por WhatsApp
             </a>
             <a
               href="tel:+529990000000"
-              className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide text-ink border border-border px-8 py-3 transition-colors duration-200 hover:border-ink"
+              className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide rounded-full px-8 py-3 bg-foreground/5 backdrop-blur-md text-ink border border-foreground/10 transition-colors duration-200 hover:text-primary hover:border-primary/30"
             >
               Llamar al consultorio
             </a>
