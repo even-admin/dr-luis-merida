@@ -19,7 +19,7 @@ const SiteFooter = () => {
             </div>
           </div>
           <div>
-            <p className="label-uppercase text-[11px] mb-3 !text-warm-grey">Navegación</p>
+            <p className="label-uppercase text-[11px] mb-3 !text-off-white/60">Navegación</p>
             <ul className="space-y-2 text-off-white/80 text-[15px]">
               <li><a href="#especialidad" className="hover:text-off-white transition-colors">Especialidad</a></li>
               <li><a href="#sobre-el-doctor" className="hover:text-off-white transition-colors">Sobre el Doctor</a></li>
