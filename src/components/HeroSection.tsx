@@ -4,9 +4,9 @@ const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center" aria-label="Inicio">
       {/* Mobile/Tablet layout (< lg) — split: image top, copy bottom */}
-      <div className="lg:hidden flex flex-col min-h-screen pt-16">
+      <div className="lg:hidden flex flex-col h-screen pt-16">
         {/* Image portion with name overlay */}
-        <div className="relative flex-1 min-h-0">
+        <div className="relative flex-[3]">
           <div
             className="absolute inset-0 bg-cover bg-[center_15%] md:bg-[60%_20%]"
             style={{ backgroundImage: `url(${drPortrait})` }}
