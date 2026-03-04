@@ -28,16 +28,13 @@ const LocationsSection = () => {
               <TabsTrigger value="star" className="text-[13px] font-medium tracking-wide rounded-full px-6 py-2.5 bg-white text-ink border border-border transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary hover:bg-primary hover:text-white hover:border-primary shadow-none">Hospital Star Médica</TabsTrigger>
             </TabsList>
             <TabsContent value="faro">
-              {CALENDAR_EMBED_FARO ? (
-                <div
-                  className="w-full min-h-[500px] border border-border rounded"
-                  dangerouslySetInnerHTML={{ __html: CALENDAR_EMBED_FARO }}
-                />
-              ) : (
-                <div className="w-full min-h-[300px] border border-border rounded flex items-center justify-center text-muted-foreground text-sm">
-                  Calendario próximamente
-                </div>
-              )}
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/booking/zRPVLsuGUsTA4IIpNI8H"
+                className="w-full border-none rounded"
+                style={{ minHeight: "1200px", overflow: "hidden" }}
+                scrolling="no"
+                title="Agendar cita - Hospital Faro del Mayab"
+              />
             </TabsContent>
             <TabsContent value="star">
               <iframe
