@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
@@ -7,6 +8,17 @@ const CALENDAR_EMBED_STAR = '<iframe src="https://api.leadconnectorhq.com/widget
 
 const LocationsSection = () => {
   const ref = useScrollReveal();
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://link.msgsndr.com/js/form_embed.js";
+    script.type = "text/javascript";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <section id="consultorios" className="section-padding border-t border-border" aria-label="Consultorios">
@@ -29,18 +41,20 @@ const LocationsSection = () => {
             </TabsList>
             <TabsContent value="faro">
               <iframe
+                id="zRPVLsuGUsTA4IIpNI8H_1772643601224"
                 src="https://api.leadconnectorhq.com/widget/booking/zRPVLsuGUsTA4IIpNI8H"
                 className="w-full border-none rounded"
-                style={{ minHeight: "600px", overflow: "hidden" }}
+                style={{ minHeight: "400px", overflow: "hidden" }}
                 scrolling="no"
                 title="Agendar cita - Hospital Faro del Mayab"
               />
             </TabsContent>
             <TabsContent value="star">
               <iframe
+                id="cLtGf6lOnYzVgkjjUwQ0_1772642559459"
                 src="https://api.leadconnectorhq.com/widget/booking/cLtGf6lOnYzVgkjjUwQ0"
                 className="w-full border-none rounded"
-                style={{ minHeight: "600px", overflow: "hidden" }}
+                style={{ minHeight: "400px", overflow: "hidden" }}
                 scrolling="no"
                 title="Agendar cita - Hospital Star Médica"
               />
