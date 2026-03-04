@@ -4,6 +4,7 @@ import SpecialtiesSection from "@/components/SpecialtiesSection";
 import AboutSection from "@/components/AboutSection";
 import LocationsSection from "@/components/LocationsSection";
 import ReviewsSection from "@/components/ReviewsSection";
+import OfficesSection from "@/components/OfficesSection";
 import SiteFooter from "@/components/SiteFooter";
 import StructuredData from "@/components/StructuredData";
 
