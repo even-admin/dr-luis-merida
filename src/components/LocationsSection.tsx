@@ -18,7 +18,7 @@ const offices = [
 
 // Placeholder — replace with actual embed URLs once provided
 const CALENDAR_EMBED_FARO = "";
-const CALENDAR_EMBED_STAR = "";
+const CALENDAR_EMBED_STAR = '<iframe src="https://api.leadconnectorhq.com/widget/booking/cLtGf6lOnYzVgkjjUwQ0" style="width: 100%;border:none;overflow: hidden;min-height:600px;" scrolling="no" id="cLtGf6lOnYzVgkjjUwQ0_1772642559459"></iframe><script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"><\/script>';
 
 const LocationsSection = () => {
   const ref = useScrollReveal();
