@@ -16,9 +16,13 @@ const Index = () => {
       <main>
         <HeroSection />
         <SpecialtiesSection />
+        <hr className="border-0 h-px bg-foreground/10 max-w-[700px] mx-auto" />
         <AboutSection />
+        <hr className="border-0 h-px bg-foreground/10 max-w-[700px] mx-auto" />
         <LocationsSection />
+        <hr className="border-0 h-px bg-foreground/10 max-w-[700px] mx-auto" />
         <ReviewsSection />
+        <hr className="border-0 h-px bg-foreground/10 max-w-[700px] mx-auto" />
         <OfficesSection />
       </main>
       <SiteFooter />
