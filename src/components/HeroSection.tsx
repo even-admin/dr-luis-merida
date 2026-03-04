@@ -26,11 +26,11 @@ const HeroSection = () => {
           </div>
 
           {/* Image side */}
-          <div className="relative overflow-hidden order-1 lg:order-2 rounded-lg">
+          <div className="relative overflow-hidden order-1 lg:order-2 rounded-lg lg:max-h-[360px]">
             <img
               src={drPortrait}
               alt="Dr. Luis Alberto Ramírez López, neurocirujano en Mérida, Yucatán"
-              className="w-full h-auto object-cover object-top ken-burns"
+              className="w-full h-full object-cover object-[center_15%] ken-burns"
               loading="eager"
             />
           </div>
