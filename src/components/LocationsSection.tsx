@@ -23,9 +23,9 @@ const LocationsSection = () => {
           </p>
 
           <Tabs defaultValue="faro" className="w-full">
-            <TabsList className="mb-6 bg-muted">
-              <TabsTrigger value="faro" className="text-[13px]">Hospital Faro del Mayab</TabsTrigger>
-              <TabsTrigger value="star" className="text-[13px]">Hospital Star Médica</TabsTrigger>
+            <TabsList className="mb-6 bg-transparent gap-3 p-0 h-auto">
+              <TabsTrigger value="faro" className="text-[13px] font-medium tracking-wide rounded-full px-6 py-2.5 bg-white text-ink border border-border transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary hover:bg-primary hover:text-white hover:border-primary shadow-none">Hospital Faro del Mayab</TabsTrigger>
+              <TabsTrigger value="star" className="text-[13px] font-medium tracking-wide rounded-full px-6 py-2.5 bg-white text-ink border border-border transition-all duration-200 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary hover:bg-primary hover:text-white hover:border-primary shadow-none">Hospital Star Médica</TabsTrigger>
             </TabsList>
             <TabsContent value="faro">
               {CALENDAR_EMBED_FARO ? (
