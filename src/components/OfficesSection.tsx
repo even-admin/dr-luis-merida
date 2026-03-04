@@ -19,7 +19,7 @@ const OfficesSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="ubicaciones" className="section-padding" aria-label="Ubicaciones">
+    <section id="ubicaciones" className="section-padding bg-white" aria-label="Ubicaciones">
       <div className="content-width" ref={ref}>
         <p className="label-uppercase mb-4">Consultorios</p>
         <div className="w-10 h-[2px] bg-primary mb-6" />
