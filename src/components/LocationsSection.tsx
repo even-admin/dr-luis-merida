@@ -26,33 +26,8 @@ const LocationsSection = () => {
   return (
     <section id="consultorios" className="section-padding border-t border-border" aria-label="Consultorios">
       <div className="content-width" ref={ref}>
-        <p className="label-uppercase mb-4">Consultorios</p>
-        <h2 className="font-serif text-[clamp(26px,3vw,36px)] text-ink mb-12">
-          Ubicaciones en Mérida
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {offices.map((office) => (
-            <div key={office.name}>
-              <h3 className="font-serif text-[20px] text-ink mb-3">{office.name}</h3>
-              <div className="space-y-2 text-charcoal text-[15px]">
-                <p>{office.address}</p>
-                <p>
-                  <span className="label-uppercase text-[11px] mr-2">Tel</span>
-                  <a href={`tel:+52${office.phone.replace(/\s/g, '')}`} className="link-underline">
-                    {office.phone}
-                  </a>
-                </p>
-                <p>
-                  <span className="label-uppercase text-[11px] mr-2">Horario</span>
-                  {office.hours}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Citas anchor */}
-        <div id="citas" className="pt-16 mt-16 border-t border-border">
+        {/* Citas section first */}
+        <div id="citas">
           <p className="label-uppercase mb-4">Citas</p>
           <h2 className="font-serif text-[clamp(26px,3vw,36px)] text-ink mb-6">
             Agende su consulta
@@ -62,7 +37,7 @@ const LocationsSection = () => {
             o comuníquese directamente por teléfono o WhatsApp.
           </p>
 
-          <Tabs defaultValue="faro" className="w-full mb-10">
+          <Tabs defaultValue="faro" className="w-full">
             <TabsList className="mb-6 bg-muted">
               <TabsTrigger value="faro" className="text-[13px]">Hospital Faro del Mayab</TabsTrigger>
               <TabsTrigger value="star" className="text-[13px]">Hospital Star Médica</TabsTrigger>
@@ -90,21 +65,49 @@ const LocationsSection = () => {
             </TabsContent>
           </Tabs>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-6">
+          <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <a
               href="https://wa.me/529990000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide rounded-full px-8 py-3 bg-foreground/5 backdrop-blur-md text-ink border border-foreground/10 transition-colors duration-200 hover:text-primary hover:border-primary/30"
+              className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide rounded-full px-8 py-3 bg-white text-ink border border-border transition-all duration-200 hover:bg-primary hover:text-white hover:border-primary"
             >
               Agendar por WhatsApp
             </a>
             <a
               href="tel:+529990000000"
-              className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide rounded-full px-8 py-3 bg-foreground/5 backdrop-blur-md text-ink border border-foreground/10 transition-colors duration-200 hover:text-primary hover:border-primary/30"
+              className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide rounded-full px-8 py-3 bg-white text-ink border border-border transition-all duration-200 hover:bg-primary hover:text-white hover:border-primary"
             >
               Llamar al consultorio
             </a>
+          </div>
+        </div>
+
+        {/* Ubicaciones section below */}
+        <div className="pt-16 mt-16 border-t border-border">
+          <p className="label-uppercase mb-4">Consultorios</p>
+          <h2 className="font-serif text-[clamp(26px,3vw,36px)] text-ink mb-12">
+            Ubicaciones en Mérida
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {offices.map((office) => (
+              <div key={office.name}>
+                <h3 className="font-serif text-[20px] text-ink mb-3">{office.name}</h3>
+                <div className="space-y-2 text-charcoal text-[15px]">
+                  <p>{office.address}</p>
+                  <p>
+                    <span className="label-uppercase text-[11px] mr-2">Tel</span>
+                    <a href={`tel:+52${office.phone.replace(/\s/g, '')}`} className="link-underline">
+                      {office.phone}
+                    </a>
+                  </p>
+                  <p>
+                    <span className="label-uppercase text-[11px] mr-2">Horario</span>
+                    {office.hours}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
