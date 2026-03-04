@@ -26,7 +26,7 @@ const HeroSection = () => {
           </div>
 
           {/* Image side */}
-          <div className="relative overflow-hidden order-1 lg:order-2 rounded-lg lg:max-h-[360px]">
+          <div className="relative overflow-hidden order-1 lg:order-2 rounded-lg lg:max-h-[480px]">
             <img
               src={drPortrait}
               alt="Dr. Luis Alberto Ramírez López, neurocirujano en Mérida, Yucatán"
