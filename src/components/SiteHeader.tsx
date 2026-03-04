@@ -12,13 +12,10 @@ const SiteHeader = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 transition-colors duration-300"
-      style={{
-        height: 64,
-        backgroundColor: scrolled ? "rgba(247, 246, 242, 0.96)" : "transparent",
-        backdropFilter: scrolled ? "blur(8px)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(8px)" : "none",
-      }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 h-16
+        bg-[rgba(247,246,242,0.96)] backdrop-blur-md
+        ${scrolled ? 'lg:bg-[rgba(247,246,242,0.96)] lg:backdrop-blur-md' : 'lg:bg-transparent lg:backdrop-blur-none'}
+      `}
     >
       <nav className="content-width flex items-center justify-between h-full" aria-label="Navegación principal">
         <a href="#inicio" className="font-serif text-[16px] text-ink leading-tight">

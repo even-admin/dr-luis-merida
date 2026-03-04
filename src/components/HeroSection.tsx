@@ -5,13 +5,13 @@ const HeroSection = () => {
     <section id="inicio" className="relative min-h-screen flex items-center" aria-label="Inicio">
       {/* Mobile/Tablet layout (< lg) */}
       <div
-        className="lg:hidden absolute inset-0 bg-cover bg-[center_15%]"
+        className="lg:hidden absolute top-16 left-0 right-0 bottom-0 bg-cover bg-[center_15%] md:bg-[60%_20%]"
         style={{ backgroundImage: `url(${drPortrait})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
       </div>
 
-      <div className="lg:hidden relative z-10 w-full min-h-screen flex items-end pb-16 pt-32">
+      <div className="lg:hidden relative z-10 w-full min-h-screen flex items-end pb-16 pt-16">
         <div className="content-width w-full">
           <div className="max-w-[540px]">
             <p className="label-uppercase mb-6 reveal !text-white/60">Neurocirugía · Mérida, Yucatán</p>
