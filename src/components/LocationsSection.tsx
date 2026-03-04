@@ -45,6 +45,34 @@ const LocationsSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Citas anchor */}
+        <div id="citas" className="pt-16 mt-16 border-t border-border">
+          <p className="label-uppercase mb-4">Citas</p>
+          <h2 className="font-serif text-[clamp(26px,3vw,36px)] text-ink mb-6">
+            Agende su consulta
+          </h2>
+          <p className="text-charcoal text-[15px] leading-relaxed mb-8 max-w-[520px]">
+            Para programar una cita o solicitar una valoración neuroquirúrgica, 
+            comuníquese directamente por teléfono o WhatsApp.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://wa.me/529990000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide text-primary-foreground bg-primary px-8 py-3 transition-colors duration-200 hover:bg-blue/90"
+            >
+              Agendar por WhatsApp
+            </a>
+            <a
+              href="tel:+529990000000"
+              className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide text-ink border border-border px-8 py-3 transition-colors duration-200 hover:border-ink"
+            >
+              Llamar al consultorio
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
