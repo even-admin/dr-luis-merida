@@ -1,6 +1,6 @@
 const SiteFooter = () => {
   return (
-    <footer id="contacto" className="section-padding bg-charcoal" aria-label="Contacto">
+    <footer id="contacto" className="section-padding bg-[#0d47a1]" aria-label="Contacto">
       <div className="content-width">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div>
