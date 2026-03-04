@@ -11,7 +11,7 @@ const HeroSection = () => {
             className="absolute inset-0 bg-cover bg-[center_15%] md:bg-[60%_20%]"
             style={{ backgroundImage: `url(${drPortrait})` }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,30,60,0.85)] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,30,60,0.85)] via-[rgba(10,30,60,0.15)] to-transparent" />
           <div className="relative z-10 h-full flex flex-col justify-end p-6 pb-8">
             <p className="label-uppercase mb-3 reveal !text-white/60">Neurocirugía · Mérida, Yucatán</p>
             <h1 className="font-serif text-[clamp(32px,8vw,52px)] leading-[1.08] !text-white reveal reveal-delay-1">
