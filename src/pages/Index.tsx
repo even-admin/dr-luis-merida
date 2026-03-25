@@ -6,6 +6,7 @@ import LocationsSection from "@/components/LocationsSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import OfficesSection from "@/components/OfficesSection";
 import SiteFooter from "@/components/SiteFooter";
+import FAQSection from "@/components/FAQSection";
 import StructuredData from "@/components/StructuredData";
 
 const Index = () => {
@@ -24,6 +25,8 @@ const Index = () => {
         <ReviewsSection />
         <hr className="border-0 h-px bg-foreground/10 max-w-[700px] mx-auto" />
         <OfficesSection />
+        <hr className="border-0 h-px bg-foreground/10 max-w-[700px] mx-auto" />
+        <FAQSection />
       </main>
       <SiteFooter />
     </>

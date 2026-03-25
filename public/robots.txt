@@ -1,3 +1,4 @@
+# Traditional Search Engines
 User-agent: Googlebot
 Allow: /
 
@@ -10,5 +11,57 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# OpenAI — ChatGPT Search & Browsing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic — Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI (Gemini, AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Apple AI (Siri, Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Other AI Search Engines
+User-agent: YouBot
+Allow: /
+
+User-agent: PhindBot
+Allow: /
+
+User-agent: ExaBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Block pure training scrapers with no search benefit
+User-agent: CCBot
+Disallow: /
+
+# Default: allow everything
 User-agent: *
 Allow: /
+
+Sitemap: https://www.drluisramirezlopez.com/sitemap.xml

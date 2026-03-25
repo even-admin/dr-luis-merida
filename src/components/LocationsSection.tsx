@@ -78,7 +78,7 @@ const LocationsSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <a
-              href="https://wa.me/529990000000"
+              href="https://wa.me/529999214962"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide rounded-full px-8 py-3 bg-white text-ink border border-border transition-all duration-200 hover:bg-primary hover:text-white hover:border-primary"
@@ -86,7 +86,7 @@ const LocationsSection = () => {
               Agendar por WhatsApp
             </a>
             <a
-              href="tel:+529990000000"
+              href="tel:+529999214962"
               className="inline-flex items-center justify-center font-sans text-[13px] font-medium tracking-wide rounded-full px-8 py-3 bg-white text-ink border border-border transition-all duration-200 hover:bg-primary hover:text-white hover:border-primary"
             >
               Llamar al consultorio

@@ -4,14 +4,14 @@ const offices = [
   {
     name: "Hospital Faro del Mayab #711",
     address: "Calle 24 S/N, por 7 y 7A, Altabrisa, 97133 Mérida, Yuc.",
-    phone: "999 000 0000",
-    hours: "Lunes a Viernes · 10:00 – 14:00",
+    phone: "999 921 4962",
+    hours: "Lunes y Martes · 9:00 – 13:00",
   },
   {
     name: "Hospital Star Médica #417",
     address: "Calle 26 No. 199, por 15 y 7, Altabrisa, 97133 Mérida, Yuc.",
-    phone: "999 000 0000",
-    hours: "Lunes a Viernes · 16:00 – 20:00",
+    phone: "999 943 3334",
+    hours: "Jueves · 9:00 – 13:00 | Viernes · 17:00 – 21:00",
   },
 ];
 
